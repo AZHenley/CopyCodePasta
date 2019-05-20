@@ -1,7 +1,7 @@
 CopyCodePasta
 =============
 
-This tool allows you to paste text that changes everytime you paste. Think of it as a Dynamic COPY and PASTE with integer variables. It works great for macros or when it would be too much effort to write a fully automated script.
+This tool allows you to copy and paste text that changes everytime you paste. Think of it as a Dynamic COPY and PASTE with integer variables. It works great for macros or when it would be too much effort to write a fully automated script.
 
 Let's say I want to paste `Id=X, Name=X, Column=Y` where X increases by 1 each time I paste and Y increases by 3.
 
