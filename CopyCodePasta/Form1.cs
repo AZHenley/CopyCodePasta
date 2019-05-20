@@ -28,14 +28,19 @@ namespace CopyCodePasta
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            hook.HookedKeys.Add(Keys.V);
-            hook.KeyDown += new KeyEventHandler(PasteEvent);
+            stopButton.Enabled = false;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void startButton_Click(object sender, EventArgs e)
         {
+            stopButton.Enabled = true;
+            startButton.Enabled = false;
+
+            hook.HookedKeys.Add(Keys.V);
+            hook.KeyDown += new KeyEventHandler(PasteEvent);
+
             variables = new Dictionary<string, Tuple<int, int, string>>();
-            originalText = textBox1.Text;
+            originalText = codeTextBox.Text;
 
             MatchCollection matches = Regex.Matches(originalText, @"\$\$[^$$\r\n]*\$\$");
             foreach (Match match in matches)
@@ -84,8 +89,11 @@ namespace CopyCodePasta
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void stopButton_Click(object sender, EventArgs e)
         {
+            stopButton.Enabled = false;
+            startButton.Enabled = true;
+
             hook.HookedKeys.Clear();
         }
     }
