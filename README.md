@@ -18,3 +18,6 @@ Another simple example: `Paste number: $$count,1,1$$`
 - Paste number: 1
 - Paste number: 2
 - Paste number: 3
+
+
+Only integers are supported without any expressions or conditionals.
