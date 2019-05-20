@@ -21,3 +21,5 @@ Another simple example: `Paste number: $$count,1,1$$`
 
 
 Only integers are supported without any expressions or conditionals.
+
+![Screenshot of CopyCodePasta](https://github.com/AZHenley/CopyCodePasta/blob/master/copycodepasta_screenshot.png "Screnshot of CopyCodePasta")
