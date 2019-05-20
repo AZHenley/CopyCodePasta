@@ -20,6 +20,6 @@ Another simple example: `Paste number: $$count,1,1$$`
 - Paste number: 3
 
 
-Only integers are supported without any expressions or conditionals.
+Only supports Windows. Any number of integer variables are allowed, but there are no expressions or conditionals.
 
 ![Screenshot of CopyCodePasta](https://github.com/AZHenley/CopyCodePasta/blob/master/copycodepasta_screenshot.png "Screnshot of CopyCodePasta")
